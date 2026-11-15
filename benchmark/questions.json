@@ -1,0 +1,423 @@
+{
+  "_meta": {
+    "version": "3.0",
+    "confirmed": "2026-09-17",
+    "count": 15,
+    "split": {
+      "single": 5,
+      "multi": 5,
+      "partial": 3,
+      "unanswerable": 2
+    },
+    "updated": "2026-10-05",
+    "canvas_coverage": [
+      "32555 (10 chunks)",
+      "32606 (3)",
+      "32601 (3)",
+      "32557 (3)"
+    ],
+    "reference_source": "user = a gold answer confirmed by a person",
+    "chunking_policy": "1 chunk = 1 addressable unit. Handbook records are chunked per section, Canvas pages per item (assessment task / week module / announcement / reading list), and a Canvas assessment page gets one extra overview chunk. 32555 and the three newer subjects all follow this policy."
+  },
+  "questions": [
+    {
+      "id": 1,
+      "type": "single",
+      "rq": [
+        "RQ1"
+      ],
+      "question_en": "What will I learn in the Database subject?",
+      "required_sources": [
+        {
+          "source": "handbook",
+          "subject_code": "32606",
+          "section": "Learning outcomes"
+        }
+      ],
+      "purpose": "Whether retrieval picks the Learning outcomes section, the one relevant to the question, out of the several sections of a Handbook record.",
+      "gold_chunk_ids": [
+        "HB_32606_003"
+      ],
+      "reference": "In Database you will learn to design an Entity-Relationship (E-R) model from specifications and transform a conceptual model into corresponding logical data structures; construct Structured Query Language (SQL) statements and maintain a simple database; critically evaluate database designs and the role databases play in effective software applications; and effectively communicate database design.\n\nSource: Handbook - Learning Outcomes.",
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 2,
+      "type": "single",
+      "rq": [
+        "RQ1"
+      ],
+      "question_en": "What are the prerequisites for Advanced Project Management?",
+      "required_sources": [
+        {
+          "source": "handbook",
+          "subject_code": "32601",
+          "section": "Requisites"
+        }
+      ],
+      "purpose": "Whether the subject name and code identify the right subject and the Requisites information is retrieved correctly.",
+      "gold_chunk_ids": [
+        "HB_32601_004"
+      ],
+      "reference": "The prerequisite subjects for Advanced Project Management are 32541 Project Management, 49002 Managing Projects, and 48260 Engineering Project Management. You need to have completed any one of these three subjects.\n\nSource: Handbook - Requisites.",
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 3,
+      "type": "single",
+      "rq": [
+        "RQ1"
+      ],
+      "question_en": "I heard that I need to complete OPELA for Enabling Enterprise Information Systems. Where and how can I complete it?",
+      "required_sources": [
+        {
+          "source": "handbook",
+          "subject_code": "32557",
+          "section": "Learning and teaching activities"
+        }
+      ],
+      "purpose": "Whether the keyword OPELA is connected to the EEIS subject and both the relevant section and its detail are retrieved.",
+      "gold_chunk_ids": [
+        "HB_32557_002"
+      ],
+      "reference": "Enabling Enterprise Information Systems students are required to complete **OPELA**, an online language screening task used to determine their current academic language proficiency. Information on how to complete it is available on the \"About OPELA for Students\" page, as noted in the subject's Learning and Teaching Activities. If you receive a Basic grade for OPELA, you will be directed to a language development intensive during Stuvac. If you do not complete OPELA, you will receive a sanction preventing access to your subject results and transcript in My Student Admin.\n\nSource: Handbook - Learning and Teaching Activities.",
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 4,
+      "type": "single",
+      "rq": [
+        "RQ1"
+      ],
+      "question_en": "What will I learn in Week 2 of Fundamentals of Software Development?",
+      "required_sources": [
+        {
+          "source": "canvas",
+          "subject_code": "32555",
+          "section": "Modules"
+        }
+      ],
+      "purpose": "Whether subject and week metadata are kept apart well enough to retrieve the Module content for Week 2.",
+      "gold_chunk_ids": [
+        "CV_32555_MOD_002_001"
+      ],
+      "reference": "Week 2 of Fundamentals of Software Development covers object-oriented design. Lecture 2 introduces objects and classes, object-oriented design principles, class diagrams, relationships between classes, and translating requirements into a software design. In Lab 2 you practise identifying candidate classes, creating class diagrams, defining relationships between classes, and developing an initial software design from requirements.\n\nSource: Canvas - Module Week 2: Software Design.",
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 5,
+      "type": "single",
+      "rq": [
+        "RQ1"
+      ],
+      "question_en": "Are there any recommended books to read before taking Database?",
+      "required_sources": [
+        {
+          "source": "canvas",
+          "subject_code": "32606",
+          "section": "Reading List"
+        }
+      ],
+      "purpose": "Whether a specific information type -- the reading list, rather than general subject information -- is identified and its material retrieved.",
+      "gold_chunk_ids": [
+        "CV_32606_RDL_001_001"
+      ],
+      "reference": "A recommended book for Database is Michael Mannino's Database Application Development (ISBN 0072463678). It can be used as background reading for database concepts and database application development.\n\nSource: Canvas - Reading List.",
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 6,
+      "type": "multi",
+      "rq": [
+        "RQ1",
+        "RQ2"
+      ],
+      "question_en": "What does Fundamentals of Software Development officially cover, and what will I actually study in the Week 1 module?",
+      "required_sources": [
+        {
+          "source": "handbook",
+          "subject_code": "32555",
+          "section": "Subject description"
+        },
+        {
+          "source": "canvas",
+          "subject_code": "32555",
+          "section": "Modules"
+        }
+      ],
+      "purpose": "Whether both the official Handbook subject information and the weekly Canvas material are retrieved, and the two sources are combined with their roles distinguished.",
+      "gold_chunk_ids": [
+        "HB_32555_001",
+        "CV_32555_MOD_001_001"
+      ],
+      "reference": "Officially, the Handbook describes Fundamentals of Software Development as providing a foundation in modern software development, covering the theoretical and practical aspects of software modelling and development methods, tools and techniques. It states that you will learn how to analyse, design, develop and evaluate software programs that implement realistic but manageably small-scale software requirements.\n\nIn the Week 1 Canvas module you actually study requirements analysis. Lecture 1 covers the introduction to software development, the software development life cycle, development methodologies, programming paradigms, requirements analysis and validation, and an introduction to UML and use-case diagrams. In Lab 1 you practise identifying user requirements from a case study, distinguishing functional and non-functional requirements, documenting system requirements, and creating simple use-case models.\n\nSources: Handbook - Subject description; Canvas - Module Week 1: Requirements Analysis.",
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 7,
+      "type": "multi",
+      "rq": [
+        "RQ1",
+        "RQ2"
+      ],
+      "question_en": "What are the due dates for each Fundamentals of Software Development assessment?",
+      "required_sources": [
+        {
+          "source": "canvas",
+          "subject_code": "32555",
+          "section": "Assignments"
+        },
+        {
+          "source": "canvas",
+          "subject_code": "32555",
+          "section": "Announcements"
+        }
+      ],
+      "purpose": "RQ1, within-source cross-type: whether Assignments and Announcements inside the same Canvas space are both retrieved so that the original and the changed due date are presented together. This is the conflict-handling case (13 Sep -> 20 Sep).",
+      "gold_chunk_ids": [
+        "CV_32555_ASG_001_002",
+        "CV_32555_ASG_001_003",
+        "CV_32555_ASG_001_004",
+        "CV_32555_ASG_001_005",
+        "CV_32555_ASG_001_006",
+        "CV_32555_ANN_001_001"
+      ],
+      "reference": "The due dates for the Fundamentals of Software Development assessments are:\n- Part 1: Analysis and Design - 20 September 2026 at 23:59\n- Part 2: Software Development - 8 November 2026 at 23:59\n- Part 3: Project Showcase - 8 November 2026 at 23:59\n- Task 2: Quiz 1 - 11 September 2026 at 14:00\n- Task 3: Quiz 2 - 23 October 2026 at 12:40\n\nOne due date has been changed. An announcement posted on 10 September 2026 extended Part 1: Analysis and Design from 13 September 2026 to 20 September 2026 at 23:59. All other assessment requirements remain unchanged.\n\nSources: Canvas - Assignments; Canvas - Announcements.",
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 8,
+      "type": "multi",
+      "rq": [
+        "RQ1",
+        "RQ2"
+      ],
+      "question_en": "What is the guidance for Database Assignment 1, and which subject learning objectives does it relate to?",
+      "required_sources": [
+        {
+          "source": "canvas",
+          "subject_code": "32606",
+          "section": "Assignments"
+        },
+        {
+          "source": "handbook",
+          "subject_code": "32606",
+          "section": "Learning outcomes"
+        }
+      ],
+      "purpose": "Whether assignment guidance and the official learning outcomes are retrieved separately and then related to each other with evidence.",
+      "gold_chunk_ids": [
+        "CV_32606_ASG_002_001",
+        "HB_32606_003"
+      ],
+      "reference": "Database Assignment 1 is an in-class SQL test. Students receive approximately 3-4 SQL questions in the lab, write SQL statements, check the resulting output, and submit their SQL code and output through Canvas. The task is directly related to Learning Outcome 2, which requires students to construct SQL statements and maintain a simple database.\n\nSources: Canvas - Assessment 1: SQL Test 1; Handbook - Learning Outcomes.",
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 9,
+      "type": "multi",
+      "rq": [
+        "RQ1",
+        "RQ2"
+      ],
+      "question_en": "Which modules should I study to prepare for Assignment 1 in Advanced Project Management?",
+      "required_sources": [
+        {
+          "source": "canvas",
+          "subject_code": "32601",
+          "section": "Modules"
+        },
+        {
+          "source": "canvas",
+          "subject_code": "32601",
+          "section": "Assignments"
+        }
+      ],
+      "purpose": "Whether the assignment requirements and the related module are retrieved across several Canvas documents, and the material needed to prepare the assignment is linked correctly.",
+      "gold_chunk_ids": [
+        "CV_32601_ASG_001_001",
+        "CV_32601_MOD_002_001"
+      ],
+      "reference": "To prepare for Advanced Project Management Assignment 1, the most relevant module is Week 2: Leadership, Emotional Intelligence & Reflection. The assignment requires a reflection on leadership style and emotional-intelligence assessment results. Week 2 covers personality, reframing attitude, emotional intelligence, the Ladder of Inference, anxiety-solving versus problem-solving, and the Johari Window. These topics provide concepts that can be used to analyse your results and identify areas for improvement.\n\nSources: Canvas - Assignment 1; Canvas - Week 2 Module.",
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 10,
+      "type": "multi",
+      "rq": [
+        "RQ1",
+        "RQ2"
+      ],
+      "question_en": "What assignments do I have due in Sep 2026?",
+      "required_sources": [
+        {
+          "source": "canvas",
+          "subject_code": "32555",
+          "section": "Assignments"
+        },
+        {
+          "source": "canvas",
+          "subject_code": "32555",
+          "section": "Announcements"
+        },
+        {
+          "source": "canvas",
+          "subject_code": "32606",
+          "section": "Assignments"
+        },
+        {
+          "source": "canvas",
+          "subject_code": "32601",
+          "section": "Assignments"
+        },
+        {
+          "source": "canvas",
+          "subject_code": "32557",
+          "section": "Assignments"
+        }
+      ],
+      "purpose": "RQ1: whether assessments in a given period are collected across all enrolled subjects when the question names no subject at all. Without the enrolment, the scope of the search is undefined.",
+      "gold_chunk_ids": [
+        "CV_32555_ASG_001_002",
+        "CV_32555_ASG_001_005",
+        "CV_32555_ANN_001_001",
+        "CV_32606_ASG_001_001",
+        "CV_32601_ASG_002_001",
+        "CV_32557_ASG_002_001"
+      ],
+      "reference": "You have the following assessments due in September 2026:\n\nFundamentals of Software Development: Quiz 1 is due on 11 September 2026 at 14:00. Part 1: Analysis and Design is due on 20 September 2026 at 23:59, following an extension from the original due date of 13 September.\n\nDatabase: SQL Test 1 is due on 4 September 2026 at 14:00, SQL Test 2 on 11 September at 14:00, ACID Properties and Integrity Constraints on 15 September at 11:11, and the ERD Task on 29 September at 11:11.\n\nAdvanced Project Management: Assignment 2: Case Study is due on 27 September 2026 at 23:59.\n\nEnabling Enterprise Information Systems: Quiz 1 is due on 4 September 2026 at 23:59.",
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 11,
+      "type": "partial",
+      "rq": [
+        "RQ2"
+      ],
+      "question_en": "How is Enabling Enterprise Information Systems taught each week, and are the lectures recorded?",
+      "required_sources": [
+        {
+          "source": "handbook",
+          "subject_code": "32557",
+          "section": "Learning and teaching activities"
+        }
+      ],
+      "unavailable_reason": "Lecture recording information for EEIS",
+      "purpose": "RQ2 partial support (Handbook required): whether the weekly teaching pattern is answered from the Handbook while the question of lecture recordings is reported as not in the material. The trap is cross-subject contamination: carrying the recording mentions in HB_32555_001 ('pre-recorded lectures') and CV_32601_MOD_002_001 ('recording') over into an answer about EEIS.",
+      "gold_chunk_ids": [
+        "HB_32557_002"
+      ],
+      "supported_part": "One hour of lecture plus two hours of tutorial per week; lecture notes posted on Canvas before each lecture; recommended readings to be done beforehand; case study questions prepared after the tutorial.",
+      "unsupported_part": "Whether lectures are recorded.",
+      "reference": "Enabling Enterprise Information Systems is taught through one hour of lecture and two hours of tutorial every week, combining topic presentations, design activities and group discussions. Lecture notes for each week are made available on Canvas before each lecture, and you should review them together with the recommended readings before class. Each tutorial includes collaborative tasks followed by a post-class case study, and you should study the case and answer its questions before the next class.\n\nThe available sources do not say whether the lectures are recorded, so this cannot be confirmed. Please check the subject's Canvas site or ask the teaching team.\n\nSource: Handbook - Learning and Teaching Activities.",
+      "expect_abstention": false,
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 12,
+      "type": "partial",
+      "rq": [
+        "RQ2"
+      ],
+      "question_en": "For Task 1: Case Study in Fundamentals of Software Development, how many students are in each group, and how is the mark split between the group and individual components?",
+      "required_sources": [
+        {
+          "source": "canvas",
+          "subject_code": "32555",
+          "section": "Assignments"
+        }
+      ],
+      "unavailable_reason": "Group vs individual mark split for Task 1",
+      "purpose": "RQ2 partial support (Canvas required): whether the group size and the make-up and marks of Task 1 are answered while the group/individual split of the marks is reported as not in the material. The trap is reading the Part 1/2/3 marks (15/50/5 points) as that split.",
+      "gold_chunk_ids": [
+        "CV_32555_ASG_001_001",
+        "CV_32555_ASG_001_002"
+      ],
+      "supported_part": "Groups of 3-4 (per Part 1), one submission per group, Task 1 = 70% (Part 1 15 points / Part 2 50 points / Part 3 5 points), equal contribution expected.",
+      "unsupported_part": "The group vs individual split of the marks.",
+      "reference": "For Task 1: Case Study in Fundamentals of Software Development, groups have 3–4 students (as specified for Part 1: Analysis and Design), and each group submits one assessment. Task 1 is worth 70% of the subject and consists of Part 1: Analysis and Design (15 points), Part 2: Software Development (50 points) and Part 3: Project Showcase (5 points). Group members are expected to contribute equally.\n\nThe available sources do not specify how the mark is split between group and individual components, so this cannot be provided. Please check with the teaching team.\n\nSources: Canvas - Assignments Overview; Canvas - Part 1: Analysis and Design.",
+      "expect_abstention": false,
+      "data_status": "ok",
+      "reference_source": "user",
+      "acceptable_chunk_ids": [
+        "HB_32555_005"
+      ]
+    },
+    {
+      "id": 13,
+      "type": "partial",
+      "rq": [
+        "RQ1",
+        "RQ2"
+      ],
+      "question_en": "What do I need to do for the Database Project, which software should I use, and what are the marking criteria?",
+      "required_sources": [
+        {
+          "source": "canvas",
+          "subject_code": "32606",
+          "section": "Assignments"
+        },
+        {
+          "source": "handbook",
+          "subject_code": "32606",
+          "section": "Learning and teaching activities"
+        }
+      ],
+      "unavailable_reason": "Marking criteria / rubric for the Database Project",
+      "purpose": "RQ1 cross-source plus RQ2 partial support: whether both Canvas (the assignment content and deadline) and the Handbook (PostgreSQL) are retrieved and answered, while the marking criteria are reported as not in the material. The trap is offering the learning outcomes (HB_32606_003) as marking criteria.",
+      "gold_chunk_ids": [
+        "CV_32606_ASG_001_001",
+        "HB_32606_002"
+      ],
+      "supported_part": "(Canvas) design and build a small database for a real problem of the student's choosing, an ERD, feedback on the design, due 5 Oct 2026 23:59, 20 points. (Handbook) PostgreSQL, based on a database in actual use.",
+      "unsupported_part": "The marking criteria or rubric.",
+      "reference": "For the Database Project (Assessment 5), you design and build a small database based on a self-selected real-world problem, develop an ERD, and obtain feedback on your proposed design. The Handbook adds that your database should be based on one that is currently used in the real world. It is due on 5 October 2026 at 23:59 and is worth 20 points. The software tool used in the subject is PostgreSQL, a database management system, along with other web-based applications for practising SQL.\n\nThe available sources do not include the marking criteria or rubric for the Database Project, so these cannot be provided. Please check the assessment page on Canvas or ask the teaching team.\n\nSources: Canvas - Assessment Overview; Handbook - Learning and Teaching Activities.",
+      "expect_abstention": false,
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 14,
+      "type": "unanswerable",
+      "rq": [
+        "RQ2"
+      ],
+      "question_en": "What kind of answer does the Enabling Enterprise Information Systems lecturer prefer when giving the highest marks for Assessment 2?",
+      "required_sources": [],
+      "unavailable_reason": "Lecturer preference data",
+      "purpose": "Whether the lecturer's personal preference or intent is guessed at without evidence.",
+      "gold_chunk_ids": [],
+      "reference": "This information is not available. The knowledge base does not contain information about an individual lecturer's marking preferences or expectations. The only guidance that can be provided is the published assessment information for the subject.",
+      "expect_abstention": true,
+      "data_status": "ok",
+      "reference_source": "user"
+    },
+    {
+      "id": 15,
+      "type": "unanswerable",
+      "rq": [
+        "RQ2"
+      ],
+      "question_en": "What are the prerequisites for 39999 Advanced Data Programming?",
+      "required_sources": [],
+      "unavailable_reason": "No subject record for 39999 Advanced Data Programming in the Knowledge Base",
+      "purpose": "Whether the assistant abstains properly when the subject itself is absent from the knowledge base, rather than retrieving another subject's prerequisites or inventing information.",
+      "gold_chunk_ids": [],
+      "reference": "This information is not available. There is no record of a subject with the code 39999 or the name Advanced Data Programming in the knowledge base, so its prerequisites cannot be provided.",
+      "expect_abstention": true,
+      "data_status": "ok",
+      "reference_source": "user"
+    }
+  ]
+}

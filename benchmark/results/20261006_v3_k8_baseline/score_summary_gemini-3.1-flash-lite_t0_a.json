@@ -1,0 +1,298 @@
+{
+  "judge_model": "gemini-3.1-flash-lite",
+  "rows": 45,
+  "configs": {
+    "k8": {
+      "rq1": {
+        "id_recall_mean": 0.933,
+        "id_precision_mean": 0.639,
+        "ragas_context_precision_mean": 0.368,
+        "ragas_context_recall_mean": 0.947
+      },
+      "rq2": {
+        "faithfulness_answerable_mean": 0.954,
+        "abstention_success_rate": 1,
+        "over_abstention_rate": 0.2,
+        "partial_abstention_rate_answerable": 0,
+        "citation_support_mean": 0.906,
+        "completeness_answerable_mean": 0.812
+      },
+      "partial": {
+        "partial_abstention_success_rate": 1,
+        "over_abstention_rate": 0,
+        "missed_abstention_rate": 0,
+        "faithfulness_mean": 0.911,
+        "completeness_mean": 0.757,
+        "id_recall_mean": 1.0,
+        "id_precision_mean": 0.528
+      },
+      "errors": 0,
+      "per_question": {
+        "1": {
+          "type": "single",
+          "faithfulness_mean": 1.0,
+          "faithfulness_sd": 0.0,
+          "completeness_mean": 0.429,
+          "completeness_sd": 0.0,
+          "abstention": [
+            "none",
+            "none",
+            "none"
+          ],
+          "citation_support": 1.0,
+          "id_recall": 1.0,
+          "id_precision": 0.14285714285714285,
+          "ragas_context_precision": 0.3928571428375,
+          "ragas_context_recall": 1.0,
+          "ctx_errors": []
+        },
+        "2": {
+          "type": "single",
+          "faithfulness_mean": 1.0,
+          "faithfulness_sd": 0.0,
+          "completeness_mean": 1.0,
+          "completeness_sd": 0.0,
+          "abstention": [
+            "none",
+            "none",
+            "none"
+          ],
+          "citation_support": 1.0,
+          "id_recall": 1.0,
+          "id_precision": 1.0,
+          "ragas_context_precision": 0.9999999999,
+          "ragas_context_recall": 1.0,
+          "ctx_errors": []
+        },
+        "3": {
+          "type": "single",
+          "faithfulness_mean": 0.857,
+          "faithfulness_sd": 0.247,
+          "completeness_mean": 0.722,
+          "completeness_sd": 0.096,
+          "abstention": [
+            "full",
+            "full",
+            "full"
+          ],
+          "citation_support": 0.5,
+          "id_recall": 1.0,
+          "id_precision": 1.0,
+          "ragas_context_precision": 0.9999999999,
+          "ragas_context_recall": 1.0,
+          "ctx_errors": []
+        },
+        "4": {
+          "type": "single",
+          "faithfulness_mean": 1.0,
+          "faithfulness_sd": 0.0,
+          "completeness_mean": 1.0,
+          "completeness_sd": 0.0,
+          "abstention": [
+            "none",
+            "none",
+            "none"
+          ],
+          "citation_support": 1.0,
+          "id_recall": 1.0,
+          "id_precision": 0.16666666666666666,
+          "ragas_context_precision": 0.16666666665,
+          "ragas_context_recall": 1.0,
+          "ctx_errors": []
+        },
+        "5": {
+          "type": "single",
+          "faithfulness_mean": 1.0,
+          "faithfulness_sd": 0.0,
+          "completeness_mean": 1.0,
+          "completeness_sd": 0.0,
+          "abstention": [
+            "none",
+            "none",
+            "none"
+          ],
+          "citation_support": 1.0,
+          "id_recall": 1.0,
+          "id_precision": 1.0,
+          "ragas_context_precision": 0.9999999999,
+          "ragas_context_recall": 0.6666666666666666,
+          "ctx_errors": []
+        },
+        "6": {
+          "type": "multi",
+          "faithfulness_mean": 1.0,
+          "faithfulness_sd": 0.0,
+          "completeness_mean": 1.0,
+          "completeness_sd": 0.0,
+          "abstention": [
+            "none",
+            "none",
+            "none"
+          ],
+          "citation_support": 1.0,
+          "id_recall": 1.0,
+          "id_precision": 0.8333333333333333,
+          "ragas_context_precision": 0.0,
+          "ragas_context_recall": 1.0,
+          "ctx_errors": []
+        },
+        "7": {
+          "type": "multi",
+          "faithfulness_mean": 1.0,
+          "faithfulness_sd": 0.0,
+          "completeness_mean": 1.0,
+          "completeness_sd": 0.0,
+          "abstention": [
+            "none",
+            "none",
+            "none"
+          ],
+          "citation_support": 0.857,
+          "id_recall": 1.0,
+          "id_precision": 0.8555555555555556,
+          "ragas_context_precision": 0.0,
+          "ragas_context_recall": 0.8,
+          "ctx_errors": []
+        },
+        "8": {
+          "type": "multi",
+          "faithfulness_mean": 0.921,
+          "faithfulness_sd": 0.004,
+          "completeness_mean": 1.0,
+          "completeness_sd": 0.0,
+          "abstention": [
+            "none",
+            "none",
+            "none"
+          ],
+          "citation_support": 1.0,
+          "id_recall": 1.0,
+          "id_precision": 0.26666666666666666,
+          "ragas_context_precision": 0.0,
+          "ragas_context_recall": 1.0,
+          "ctx_errors": []
+        },
+        "9": {
+          "type": "multi",
+          "faithfulness_mean": 0.801,
+          "faithfulness_sd": 0.066,
+          "completeness_mean": 0.305,
+          "completeness_sd": 0.048,
+          "abstention": [
+            "full",
+            "full",
+            "full"
+          ],
+          "citation_support": 1.0,
+          "id_recall": 0.5,
+          "id_precision": 0.125,
+          "ragas_context_precision": 0.1249999999875,
+          "ragas_context_recall": 1.0,
+          "ctx_errors": []
+        },
+        "10": {
+          "type": "multi",
+          "faithfulness_mean": 0.963,
+          "faithfulness_sd": 0.064,
+          "completeness_mean": 0.667,
+          "completeness_sd": 0.072,
+          "abstention": [
+            "none",
+            "none",
+            "none"
+          ],
+          "citation_support": 1.0,
+          "id_recall": 0.8333333333333334,
+          "id_precision": 1.0,
+          "ragas_context_precision": 0.0,
+          "ragas_context_recall": 1.0,
+          "ctx_errors": []
+        },
+        "11": {
+          "type": "partial",
+          "faithfulness_mean": 1.0,
+          "faithfulness_sd": 0.0,
+          "completeness_mean": 0.714,
+          "completeness_sd": 0.0,
+          "abstention": [
+            "partial",
+            "partial",
+            "partial"
+          ],
+          "citation_support": 1.0,
+          "id_recall": 1.0,
+          "id_precision": 0.25,
+          "ragas_context_precision": 0.249999999975,
+          "ragas_context_recall": 1.0,
+          "ctx_errors": []
+        },
+        "12": {
+          "type": "partial",
+          "faithfulness_mean": 0.9,
+          "faithfulness_sd": 0.0,
+          "completeness_mean": 1.0,
+          "completeness_sd": 0.0,
+          "abstention": [
+            "partial",
+            "partial",
+            "partial"
+          ],
+          "citation_support": 1.0,
+          "id_recall": 1.0,
+          "id_precision": 0.8333333333333333,
+          "ragas_context_precision": 0.0,
+          "ragas_context_recall": 0.75,
+          "ctx_errors": []
+        },
+        "13": {
+          "type": "partial",
+          "faithfulness_mean": 0.833,
+          "faithfulness_sd": 0.072,
+          "completeness_mean": 0.556,
+          "completeness_sd": 0.0,
+          "abstention": [
+            "partial",
+            "partial",
+            "partial"
+          ],
+          "citation_support": 0.667,
+          "id_recall": 1.0,
+          "id_precision": 0.5,
+          "ragas_context_precision": 0.0,
+          "ragas_context_recall": 0.8,
+          "ctx_errors": []
+        },
+        "14": {
+          "type": "unanswerable",
+          "faithfulness_mean": 1.0,
+          "faithfulness_sd": 0.0,
+          "completeness_mean": null,
+          "completeness_sd": null,
+          "abstention": [
+            "full",
+            "full",
+            "full"
+          ],
+          "citation_support": 0.667,
+          "id_recall": null,
+          "id_precision": null
+        },
+        "15": {
+          "type": "unanswerable",
+          "faithfulness_mean": 1.0,
+          "faithfulness_sd": 0.0,
+          "completeness_mean": null,
+          "completeness_sd": null,
+          "abstention": [
+            "full",
+            "full",
+            "full"
+          ],
+          "citation_support": null,
+          "id_recall": null,
+          "id_precision": null
+        }
+      }
+    }
+  }
+}
